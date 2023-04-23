@@ -20,11 +20,17 @@ class Dog extends Animal {
 }
 
 class Cat extends Animal {
+  constructor(species) {
+    super(species);
+  }
 
-purr(){
-	console.log("The Siamese makes a sound")
-}
-	
+  purr() {
+    console.log("purr");
+  }
+
+  makeSound() {
+    console.log(`The ${this.species} makes a sound`);
+  }
 }
 
 // Do not change the code below this line
